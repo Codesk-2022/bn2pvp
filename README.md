@@ -2,6 +2,6 @@
 minecraft pvp server
 
 ```
-docker build
-docker run -p 25565:25565 8000:8000
+docker build -t 1.18.2-mcpvp .
+docker run -itd --privileged -p 25565:25565 -p 8000:8000 --name bn2pvp 1.18.2-mcpvp
 ```
