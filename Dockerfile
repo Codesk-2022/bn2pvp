@@ -3,9 +3,9 @@ FROM ubuntu:20.04
 ARG USER=ubuntu
 ARG PASSWD=ubuntu
 
-RUN sed -i'' 's/archive.ubuntu.com/jp.archive.ubuntu.com/' /etc/apt/sources.list && apt update -y
+RUN sed -i'' 's/archive.ubuntu.com/jp.archive.ubuntu.com/' /etc/apt/sources.list && apt-get update -y
 
-RUN apt install -y \
+RUN apt-get install -y \
     openjdk-17-jre \
     openssh-server \
     init \
