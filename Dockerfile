@@ -7,9 +7,9 @@ RUN apt update -y
 RUN apt install -y \
     openjdk-17-jre \
     openssh-server \
-    init
-    systemd
-    systemctl
+    init \
+    systemd \
+    systemctl \
 
 RUN sed -i 's/#Port 22/Port 8000/' /etc/ssh/sshd_config
 
