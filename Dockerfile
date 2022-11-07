@@ -4,6 +4,7 @@ ARG USER=ubuntu
 ARG PASSWD=ubuntu
 
 RUN sed -i'' 's/archive.ubuntu.com/jp.archive.ubuntu.com/' /etc/apt/sources.list && apt update -y
+
 RUN apt install -y \
     openjdk-17-jre \
     openssh-server \
