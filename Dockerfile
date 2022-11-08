@@ -1,8 +1,5 @@
 FROM ubuntu:20.04
 
-ARG USER=ubuntu
-ARG PASSWD=ubuntu
-
 RUN sed -i'' 's/archive.ubuntu.com/jp.archive.ubuntu.com/' /etc/apt/sources.list && apt-get update -y
 
 RUN apt-get install -y \
